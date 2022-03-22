@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/zorluozan/interactive-rating-component
+- Live Site URL: https://zorluozan.github.io/interactive-rating-component/
 
 ## My process
 
