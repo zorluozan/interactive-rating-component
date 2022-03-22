@@ -1,0 +1,158 @@
+:root {
+  --color-orange: #fb7413;
+  --color-white: #ffffff;
+  --color-light-grey: #959eac;
+  --color-medium-grey: #7c8798;
+  --color-dark-blue: #252d37;
+  --color-very-dark-blue: #121417;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-very-dark-blue);
+}
+
+.card {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 3rem;
+  padding: 4rem;
+  width: 30rem;
+}
+
+.star {
+  background: var(--color-dark-blue);
+  border-radius: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card__title {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  color: var(--color-medium-grey);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.card__ratings {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.card__ratings--btn {
+  font-size: 1.5rem;
+  color: var(--color-medium-grey);
+  background-color: var(--color-dark-blue);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.card__ratings--btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.card__ratings--btn:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.card__ratings--btn:active {
+  color: var(--color-white);
+  background-color: var(--color-medium-grey);
+}
+
+.btn {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  border: none;
+  border-radius: 10rem;
+  background-color: var(--color-orange);
+  padding: 1rem 4rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+}
+
+.thanks__card {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 3rem;
+  padding: 4rem;
+  width: 30rem;
+  text-align: center;
+  display: none;
+}
+
+.thanks__card--img {
+  margin-bottom: 2rem;
+}
+
+.thanks__card--status {
+  font-size: 1.5rem;
+  color: var(--color-orange);
+  font-weight: 400;
+  background: var(--color-dark-blue);
+  border-radius: 10rem;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.thanks__card--title {
+  color: var(--color-white);
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.thanks__card--text {
+  color: var(--color-medium-grey);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.checked {
+  background-color: var(--color-medium-grey);
+  color: var(--color-white);
+}
